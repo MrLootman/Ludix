@@ -87,8 +87,6 @@
         }
 
         button {
-          position: relative;
-          overflow: hidden;
           background: linear-gradient(90deg, rgba(85, 21, 145, 1) 0%, rgba(134, 40, 242, 1) 100%, rgba(0, 212, 255, 1) 100%);
           text-align: center;
           padding: 1rem 2rem;
@@ -100,7 +98,7 @@
 
           &:hover {
             padding: 1rem 2.5rem;
-            opacity: 0.8;
+            filter: brightness(1.25);
             box-shadow: 2px 2px #666;
           }
 
@@ -110,6 +108,11 @@
             transform: translateY(2px);
           }
         }
+      }
+
+      p {
+        position: absolute;
+        bottom: 10%;
       }
     }
   }
