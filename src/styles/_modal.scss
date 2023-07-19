@@ -1,0 +1,21 @@
+.modal {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 20px;
+  margin-bottom: 40%;
+  z-index: 1;
+  animation: opacityIn 1s ease;
+
+  &::backdrop {
+    background: rgb(232, 222, 222);
+  }
+
+  form {
+    p {
+      text-align: center;
+      margin-bottom: 60%;
+    }
+  }
+}
